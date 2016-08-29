@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSaludar = new System.Windows.Forms.Button();
+            this.txbNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnSaludar
             // 
-            this.button1.Location = new System.Drawing.Point(13, 106);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Saludar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSaludar.Location = new System.Drawing.Point(13, 106);
+            this.btnSaludar.Name = "btnSaludar";
+            this.btnSaludar.Size = new System.Drawing.Size(75, 23);
+            this.btnSaludar.TabIndex = 0;
+            this.btnSaludar.Text = "Saludar";
+            this.btnSaludar.UseVisualStyleBackColor = true;
+            this.btnSaludar.Click += new System.EventHandler(this.btnSaludar_Click);
             // 
-            // textBox1
+            // txbNombre
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(13, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txbNombre.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txbNombre.Location = new System.Drawing.Point(13, 62);
+            this.txbNombre.Name = "txbNombre";
+            this.txbNombre.Size = new System.Drawing.Size(100, 20);
+            this.txbNombre.TabIndex = 1;
             // 
             // label1
             // 
@@ -65,8 +66,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 324);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txbNombre);
+            this.Controls.Add(this.btnSaludar);
             this.Name = "holamundo";
             this.Text = "Hola Mundo";
             this.Load += new System.EventHandler(this.holamundo_Load);
@@ -77,8 +78,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnSaludar;
+        private System.Windows.Forms.TextBox txbNombre;
         private System.Windows.Forms.Label label1;
     }
 }

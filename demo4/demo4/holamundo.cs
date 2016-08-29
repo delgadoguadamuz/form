@@ -21,5 +21,12 @@ namespace demo4
         {
 
         }
+
+        private void btnSaludar_Click(object sender, EventArgs e)
+        {
+            string nombre = txbNombre.Text;
+            label1.Text = nombre;
+            
+        }
     }
 }
