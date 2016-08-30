@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaseSuma.cs" />
     <Compile Include="holamundo.cs">
       <SubType>Form</SubType>
     </Compile>
