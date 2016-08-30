@@ -33,7 +33,7 @@
             this.btnSumar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txbValor2
@@ -58,6 +58,7 @@
             this.btnSumar.TabIndex = 2;
             this.btnSumar.Text = "Sumar";
             this.btnSumar.UseVisualStyleBackColor = true;
+            this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
             // 
             // label1
             // 
@@ -78,21 +79,21 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Ingrese valor 2";
             // 
-            // label3
+            // lblResultado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 179);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Resultado ";
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(12, 179);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(58, 13);
+            this.lblResultado.TabIndex = 5;
+            this.lblResultado.Text = "Resultado ";
             // 
             // Suma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSumar);
@@ -112,6 +113,6 @@
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblResultado;
     }
 }

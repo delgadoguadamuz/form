@@ -21,5 +21,13 @@ namespace demo4
         {
 
         }
+
+        private void btnSumar_Click(object sender, EventArgs e)
+        {
+            int resultado = Convert.ToInt32(txbValor1.Text) + Convert.ToInt32(txbValor2.Text);
+            lblResultado.Text = Convert.ToString(resultado);
+
+            
+        }
     }
 }

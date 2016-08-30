@@ -16,7 +16,7 @@ namespace demo4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new holamundo());
+            Application.Run(new Suma());
         }
     }
 }
